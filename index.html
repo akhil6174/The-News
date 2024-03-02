@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The News</title>
+    <link rel="icon" type="image/png" href="news-icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div id="logo">
+            <img src="newslogo.png" alt="" class="view">
+        </div>
+        <div id="homeandall">
+            <ul>
+                <li class="view active" id="india" onclick="newarival('India')">Home</li>
+                <li class="view" id="sports" onclick="newarival('sports')">Sports</li>
+                <li class="view" id="finance" onclick="newarival('finance')">Finance</li>
+                <li class="view" id="politics" onclick="newarival('politics')">Politics</li>
+                <li class="view" id="technology" onclick="newarival('technology')">Technology</li>
+            </ul>
+        </div>
+        <div id="searching">
+            <input type="text" placeholder="e.g.science" id="searchbar">
+            <input type="submit" value="Search" id="searchbutton">
+        </div>
+    </nav>
+    <main>
+        <div class="cards-container container" id="cards-container">
+        </div>
+        <template id="card-template-container">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://via.placeholder.com/400x200" id="card-image">
+                </div>
+                <div class="card-content">
+                    <h3  id="card-heading"></h3>
+                    <h5 class="card-date" id="card-date">Date view 11-23-10</h5>
+                    <p class="descrip" id="descrip">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit accusamus amet est nam adipisci explicabo maxime nemo, iure iste autem.</p>
+                </div>
+            </div>
+        </template>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

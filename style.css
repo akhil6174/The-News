@@ -1,0 +1,115 @@
+*{
+    margin:0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+nav{
+    background-color: rgb(168, 156, 156);
+    height:70px;
+    display: flex;
+    justify-content:space-evenly;
+    width: 100%;
+    position: fixed;
+}
+#logo{
+    height:55px;
+    align-items: center;
+    justify-content: center;
+    width:17%;
+    margin-top: 7px;
+}
+#homeandall{
+    width:40%;
+    height:55px;
+    margin-top: 20px;
+    text-align: left;
+}
+#homeandall ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    text-align:center;
+    font-size: 1rem;
+}
+#searching{
+    width:33%;
+    height:55px;
+    margin-top: 10.5px;
+    padding-top:5px;
+}
+#searchbar{
+    height:40px;
+    width:50%;
+    font-size:1rem;
+    outline: none;
+    border-radius: 3px;
+    text-align: left;
+    padding-left: 1.6px;
+    border:none;
+}
+#searchbutton{
+    height:40px;
+    width:30%;
+    font-size:1rem;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    transition: all 0.2s ease-in-out;
+    background-color: rgb(127, 235, 178);
+    text-align: center;
+}
+#searchbutton:hover{
+    color: rgb(50, 15, 155);
+   box-shadow: 5px 5px 15px rgba(90, 38, 153, 0.4);
+   background-color: rgb(229, 174, 197);
+}
+.view:hover{
+    color:rgb(28, 61, 41);
+    font-size:1.2rem;
+    transition:all 0.1s ease-in-out;
+    box-sizing: border-box;
+}
+.view.active{
+    color:rgb(100, 116, 241);
+    font-size:1.2rem;
+}
+main{
+    padding-block: 10px;
+    padding:120px 10%;
+    
+}
+.cards-container{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap:20px;
+    align-items: start;
+    display: flex;
+    margin-top: 0px;
+    align-items: center;
+}
+.card{
+    width:360px;
+    min-height: 380px;
+    max-height: 420px;
+    border-radius: 4px;
+    box-shadow: 0 0 8px rgb(241, 240, 240);
+    cursor: pointer;
+    background-color: rgb(248, 250, 250);
+    overflow: hidden;
+}
+.card:hover{
+    box-shadow: 1px 1px 7px rgb(200, 200, 188);
+    transform: translateY(-2.3px);
+    background-color: rgb(227, 227, 226);
+}
+#card-image{
+    object-fit: cover;
+    width: 100%;
+    height:180px;
+}
+.card-content{
+    padding: 12px;;
+}
+#card-date{
+    margin-block:12px;
+}
